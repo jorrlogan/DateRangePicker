@@ -28,7 +28,7 @@ struct DateGridView: View {
 				Button(action: { selectionHandler(date) }) {
 					DayCell(
 						content: date.formattedDay ?? "",
-						isHighlighted: isToday(date),
+						isHighlighted: false,
 						isSelected: selectionProvider(date),
 						isEnabled: dateValidity == .available
 					)
