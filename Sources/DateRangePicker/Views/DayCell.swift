@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+import Foundation
+import SwiftUI
+import UIKit
+
+extension Color {
+    static let CSYellow = Color("CSYellow")
+}
+
+
 struct DayCell: View {
 	let content: String
 	let isHighlighted: Bool
@@ -15,13 +24,13 @@ struct DayCell: View {
 	
 	var body: some View {
 		Text(content)
-			.foregroundColor((isHighlighted || isSelected) ? .accentColor : (isEnabled) ? .primary : .secondary)
+//			.foregroundColor((isHighlighted || isSelected) ? .accentColor : (isEnabled) ? .primary : .secondary)
 			.fontWeight(isSelected ? .bold : .regular)
 			.padding([.top, .bottom], 8)
 			.padding([.leading, .trailing], 8)
 			.background {
 				Circle()
-					.foregroundColor(isSelected ? Color.accentColor.opacity(0.1) : .clear)
+					.foregroundColor(isSelected ? Color.yellow : .clear)
 			}
 			.dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 	}
