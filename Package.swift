@@ -12,7 +12,7 @@ let package = Package(
             targets: ["DateRangePicker"]),
     ],
     dependencies: [
-			.package(url: "https://github.com/MrAsterisco/OpenDateInterval", .upToNextMajor(from: "1.0.0"))
+			.package(url: "https://github.com/jorrlogan/OpenDateInterval", .upToNextMajor(from: "1.0.0"))
 		],
     targets: [
         .target(
