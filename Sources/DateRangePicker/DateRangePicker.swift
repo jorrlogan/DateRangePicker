@@ -78,7 +78,7 @@ public struct DateRangePicker: View {
 				Button(action: toggleMode) {
 					HStack {
 						Text(formattedMonthYear)
-							.foregroundColor(mode == .picker ? .accentColor : .primary)
+							.foregroundColor(mode == .picker ? Color.yellow : .primary)
 							.bold()
 							.dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 						
